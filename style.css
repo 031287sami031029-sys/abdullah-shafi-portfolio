@@ -89,6 +89,8 @@ footer{
 
 /* MOBILE */
 @media(max-width:768px){
-  nav{ display:none; }
+  @media(max-width:768px){
+  .hero h1{ font-size:26px; }
+  }
   .hero h1{ font-size:26px; }
    }
