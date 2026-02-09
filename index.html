@@ -1,68 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-
-    <title>Abdullah Shafi | Architectural Engineer | Modern Design & Planning</title>
-
-    <meta name="description" content="Professional Architectural Engineer providing modern house design, 2D & 3D plans, BIM-based architecture, interior and exterior design, and project supervision.">
-
-    <meta name="keywords" content="Architectural Engineer, Architecture Design, Modern House Design, 2D 3D Plans, BIM Architecture, Interior Design, Exterior Design">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Abdullah Shafi | Architectural Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Professional Architectural Engineer Portfolio">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div class="container nav">
-    <div><strong>Abdullah Shafi</strong></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="lang" onclick="toggleLang()">AR</div>
-  </div>
+<div class="container nav">
+<strong>Abdullah Shafi</strong>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="contact.html">Contact</a>
+</nav>
+<div class="lang" onclick="toggleLang()">AR</div>
+</div>
 </header>
 
-<section id="hero" class="hero-section fade-in">
-  <div class="container">
-    <h1>Hi, I’m Abdullah Shafi</h1>
-    <p>Architectural Designer & Creative Problem Solver</p>
-    <a href="#portfolio" class="btn">See My Work</a>
-  </div>
+<section class="hero">
+<div class="container">
+<h1 data-en="Modern Architectural Design"
+    data-ar="تصميم معماري حديث"></h1>
+
+<p data-en="Architectural Engineer specialized in modern, high-end architectural and planning solutions."
+   data-ar="مهندس معماري متخصص في الحلول المعمارية الحديثة والمتقدمة."></p>
+
+<a href="portfolio.html" class="btn"
+   data-en="View Portfolio"
+   data-ar="عرض الأعمال"></a>
+</div>
 </section>
 
-<footer>
-  © 2026 Abdullah Shafi — Architecture Portfolio
-</footer>
-
-<script src="js/main.js"></script>
-    <script>
-  // Smooth Scroll
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-
-  // Fade-in on scroll
-  const faders = document.querySelectorAll('.fade-in');
-  const appearOptions = { threshold: 0.1 };
-  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-    entries.forEach(entry => {
-      if(!entry.isIntersecting) return;
-      entry.target.classList.add('appear');
-      appearOnScroll.unobserve(entry.target);
-    });
-  }, appearOptions);
-  faders.forEach(fader => appearOnScroll.observe(fader));
-          </script>
+<footer>© 2026 Abdullah Shafi – Architecture Portfolio</footer>
+<script src="main.js"></script>
 </body>
 </html>
