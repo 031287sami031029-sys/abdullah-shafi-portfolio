@@ -150,3 +150,44 @@ footer {
         font-size: 34px;
     }
 }
+/* Mobile Spacing Fix */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  header {
+    padding: 12px 0;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .hero p {
+    margin-bottom: 16px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 10px;
+  }
+
+  footer {
+    padding: 20px 10px;
+    text-align: center;
+  }
+       }
