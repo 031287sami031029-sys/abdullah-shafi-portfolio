@@ -1,51 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Portfolio | Abdullah Shafi</title>
-  <meta name="description" content="Architectural portfolio of Abdullah Shafi">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-  <div class="container nav">
-    <div><strong>Abdullah Shafi</strong></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="lang" onclick="toggleLang()">AR</div>
-  </div>
-</header>
-
-<section>
+<section id="portfolio" class="portfolio-section fade-in">
   <div class="container">
-    <h1>Portfolio</h1>
-    <p>
-      View selected architectural works and professional experience.
-      Click below to download the full portfolio PDF.
-    </p>
-
-    <br>
-
-    <a class="btn" 
-       href="https://drive.google.com/file/d/1M0gnVmofQYllGya12EjH08jOAK1pEMh0/view" 
-       target="_blank">
-      View / Download Full Portfolio (PDF)
-    </a>
+    <h2>My Projects</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <img src="images/project1.jpg" alt="Project 1">
+        <div class="portfolio-content">
+          <h3>Project Name 1</h3>
+          <p>Client: ABC Company</p>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="images/project2.jpg" alt="Project 2">
+        <div class="portfolio-content">
+          <h3>Project Name 2</h3>
+          <p>Client: XYZ Company</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-
-<footer>
-  © 2026 Abdullah Shafi — Architecture Portfolio
-</footer>
-
-<script src="js/main.js"></script>
-</body>
-</html>
