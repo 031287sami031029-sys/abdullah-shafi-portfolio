@@ -1,24 +1,42 @@
-/* ===== Global Colors ===== */
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===== Colors ===== */
 :root{
-    --primary-black:#0f172a;
-    --premium-blue:#1e3a8a;
-    --soft-blue:#3b82f6;
+    --black:#0f172a;
+    --blue:#2563eb;
+    --light:#f8fafc;
     --white:#ffffff;
-    --light-bg:#f8fafc;
 }
 
 /* ===== Body ===== */
 body{
     font-family: 'Poppins', sans-serif;
     background:var(--white);
-    color:var(--primary-black);
-    margin:0;
+    color:var(--black);
+    line-height:1.6;
 }
 
 /* ===== Navbar ===== */
 header{
-    background:var(--primary-black);
-    padding:18px 8%;
+    background:var(--black);
+    padding:20px 8%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
 }
 
 nav ul li a{
@@ -29,45 +47,67 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color:var(--soft-blue);
+    color:var(--blue);
 }
 
-/* ===== Hero Section ===== */
+/* ===== Hero ===== */
 .hero{
+    height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
     background:
-    linear-gradient(rgba(15,23,42,0.7),rgba(15,23,42,0.7)),
+    linear-gradient(rgba(15,23,42,0.75),rgba(15,23,42,0.75)),
     url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
     background-size:cover;
     background-position:center;
-    color:white;
 }
 
-/* ===== Buttons ===== */
+.hero h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
 .btn{
-    background:var(--premium-blue);
+    background:var(--blue);
+    padding:14px 30px;
     color:white;
-    padding:12px 28px;
-    border-radius:6px;
     text-decoration:none;
+    border-radius:6px;
+    display:inline-block;
     transition:0.3s;
 }
 
 .btn:hover{
-    background:var(--soft-blue);
+    background:#1d4ed8;
 }
 
 /* ===== Sections ===== */
 section{
     padding:80px 10%;
-    background:var(--light-bg);
+    background:var(--light);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
 }
 
 /* ===== Cards ===== */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
 .card{
     background:white;
-    border-radius:12px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.07);
-    transition:0.4s;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+    transition:0.3s;
 }
 
 .card:hover{
@@ -76,8 +116,20 @@ section{
 
 /* ===== Footer ===== */
 footer{
-    background:var(--primary-black);
+    background:var(--black);
     color:white;
     text-align:center;
     padding:20px;
 }
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+    .hero h1{
+        font-size:32px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:15px;
+    }
+    }
