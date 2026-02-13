@@ -224,3 +224,51 @@ footer{
         gap:15px;
     }
     }
+/* ===== PREMIUM PAGE SECTION ===== */
+
+.section{
+    padding:80px 20px;
+}
+
+.section h2{
+    font-size:36px;
+    margin-bottom:30px;
+    text-align:center;
+    color:var(--black);
+    position:relative;
+}
+
+.section h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:var(--blue);
+    display:block;
+    margin:15px auto 0;
+    border-radius:5px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:var(--blue);
+    }
