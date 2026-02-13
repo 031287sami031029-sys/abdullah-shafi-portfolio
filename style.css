@@ -316,3 +316,36 @@ footer{
 .testimonial h4{
     color:var(--blue);
         }
+/* ===== ABOUT PROFESSIONAL SECTION ===== */
+
+.profile-grid{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:40px;
+    align-items:center;
+    margin-top:40px;
+}
+
+.profile-img img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.profile-content h3{
+    font-size:26px;
+    margin-bottom:15px;
+    color:var(--blue);
+}
+
+.profile-content p{
+    margin-bottom:15px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .profile-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+    }
