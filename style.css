@@ -78,6 +78,49 @@ nav ul li a:hover{
     border-radius:6px;
     display:inline-block;
     transition:0.3s;
+    /* ===== Premium Hero Upgrade ===== */
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(15,23,42,0.75),rgba(15,23,42,0.75)),
+    url('https://images.unsplash.com/photo-1487958449943-2429e8be8625');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:0 20px;
+}
+
+.hero-content h1{
+    font-size:52px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:30px;
+    opacity:0.9;
+}
+
+.btn{
+    background:#2563eb;
+    padding:14px 32px;
+    border-radius:6px;
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1e40af;
+    transform:translateY(-3px);
+                    }
 }
 
 .btn:hover{
