@@ -21,27 +21,50 @@ body{
     line-height:1.6;
 }
 
-/* ===== ULTRA LUXURY HEADER ===== */
+/* ===== CLEAN PREMIUM HEADER ===== */
 
-.lux-header{
-    background:rgba(15,23,42,0.85);
-    backdrop-filter:blur(12px);
-    padding:30px 5%;
+.main-header{
+    background:#0f172a;
+    padding:30px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
     text-align:center;
 }
 
-.nav-container{
-    max-width:1100px;
-    margin:auto;
+.logo{
+    color:white;
+    font-size:28px;
+    margin-bottom:25px;
+    letter-spacing:2px;
 }
 
-.logo{
-    font-size:28px;
-    font-weight:700;
-    color:white;
-    letter-spacing:2px;
-    margin-bottom:25px;
+.nav-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    list-style:none;
+    padding:0;
 }
+
+.nav-grid li a{
+    display:block;
+    padding:16px 0;
+    background:rgba(255,255,255,0.05);
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.nav-grid li a:hover{
+    background:#2563eb;
+    transform:translateY(-3px);
+    }
 
 /* ===== Grid Navigation ===== */
 
