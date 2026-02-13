@@ -66,33 +66,7 @@ body{
     transform:translateY(-3px);
     }
 
-/* ===== Grid Navigation ===== */
-
-.lux-nav{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-    list-style:none;
-    padding:0;
-}
-
-.lux-nav li a{
-    display:block;
-    padding:18px 0;
-    font-size:18px;
-    font-weight:600;
-    text-decoration:none;
-    color:white;
-    background:rgba(255,255,255,0.06);
-    border-radius:10px;
-    transition:0.3s;
-}
-
-.lux-nav li a:hover{
-    background:#2563eb;
-    transform:translateY(-4px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
-}
+/
 
 /* ===== Language Buttons ===== */
 
