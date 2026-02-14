@@ -378,3 +378,64 @@ footer{
     grid-template-columns:repeat(2,1fr);
   }
     }
+/* ===== Premium Contact Section ===== */
+
+.contact-premium{
+    padding:80px 20px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    text-align:center;
+    color:white;
+}
+
+.contact-box h2{
+    font-size:36px;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+.contact-box p{
+    margin-bottom:40px;
+    opacity:0.8;
+}
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:16px 35px;
+    font-size:18px;
+    font-weight:600;
+    border-radius:50px;
+    text-decoration:none;
+    transition:0.4s;
+    display:inline-block;
+    min-width:220px;
+}
+
+/* WhatsApp Style */
+.whatsapp{
+    background:#25D366;
+    color:white;
+    box-shadow:0 8px 25px rgba(37,211,102,0.4);
+}
+
+.whatsapp:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(37,211,102,0.6);
+}
+
+/* Email Style */
+.email{
+    background:#2563eb;
+    color:white;
+    box-shadow:0 8px 25px rgba(37,99,235,0.4);
+}
+
+.email:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(37,99,235,0.6);
+}
