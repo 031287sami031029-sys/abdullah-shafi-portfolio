@@ -471,3 +471,48 @@ footer{
     transform:translateY(-8px);
     box-shadow:0 25px 60px rgba(37,99,235,0.4);
   }
+/* ===== CV SECTION PREMIUM DESIGN ===== */
+
+.cv-section {
+    padding: 80px 20px;
+    background: #0f0f0f;
+}
+
+.luxury-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: #d4af37;
+    letter-spacing: 2px;
+}
+
+.cv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.cv-card {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.cv-card:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+}
+
+.cv-card h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.cv-card p {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 14px;
+      }
