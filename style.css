@@ -439,3 +439,35 @@ footer{
     transform:translateY(-5px);
     box-shadow:0 15px 35px rgba(37,99,235,0.6);
 }
+ .luxury-title{
+    font-size:36px;
+    text-align:center;
+    margin-bottom:50px;
+    letter-spacing:2px;
+}
+
+.cv-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.cv-card{
+    padding:30px;
+    border-radius:20px;
+    background:#111827;
+    color:#f3f4f6;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+    transition:0.4s;
+}
+
+.cv-card h3{
+    margin-bottom:15px;
+    font-size:20px;
+    color:#60a5fa;
+}
+
+.cv-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 60px rgba(37,99,235,0.4);
+  }
